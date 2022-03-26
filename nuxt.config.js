@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'congreso',
+    title: 'CONGRESO',
     htmlAttrs: {
       lang: 'en'
     },
@@ -43,5 +43,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    publicPath: '/nuxt/',
   }
 }

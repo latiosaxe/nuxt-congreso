@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Agenda",
+    "path": "/Agenda",
+    "component": "/Users/latiosaxe/code/me/nuxt-congreso/pages/Agenda.vue",
+    "chunkName": "pages/Agenda",
+    "_name": "_7e0fe078"
+  },
+  {
+    "name": "Comite-Arbitral",
+    "path": "/Comite-Arbitral",
+    "component": "/Users/latiosaxe/code/me/nuxt-congreso/pages/Comite-Arbitral.vue",
+    "chunkName": "pages/Comite-Arbitral",
+    "_name": "_28c4e84d"
+  },
+  {
+    "name": "Comite-Organizador",
+    "path": "/Comite-Organizador",
+    "component": "/Users/latiosaxe/code/me/nuxt-congreso/pages/Comite-Organizador.vue",
+    "chunkName": "pages/Comite-Organizador",
+    "_name": "_88769ae8"
+  },
+  {
+    "name": "Contacto",
+    "path": "/Contacto",
+    "component": "/Users/latiosaxe/code/me/nuxt-congreso/pages/Contacto.vue",
+    "chunkName": "pages/Contacto",
+    "_name": "_59f59af2"
+  },
+  {
+    "name": "Para-El-Autor",
+    "path": "/Para-El-Autor",
+    "component": "/Users/latiosaxe/code/me/nuxt-congreso/pages/Para-El-Autor.vue",
+    "chunkName": "pages/Para-El-Autor",
+    "_name": "_679d21c2"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/latiosaxe/code/me/nuxt-congreso/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_fa77112c"
+  }
+]

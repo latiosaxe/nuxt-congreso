@@ -1,0 +1,32 @@
+{
+  "Footer": {
+    "description": "Auto imported from components/global/Footer.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/global/Header.vue"
+  },
+  "HomeBenefits": {
+    "description": "Auto imported from components/home/Benefits.vue"
+  },
+  "HomeConvene": {
+    "description": "Auto imported from components/home/Convene.vue"
+  },
+  "HomeGoals": {
+    "description": "Auto imported from components/home/Goals.vue"
+  },
+  "HomeHero": {
+    "description": "Auto imported from components/home/Hero.vue"
+  },
+  "HomeInterest": {
+    "description": "Auto imported from components/home/Interest.vue"
+  },
+  "HomeSpeakers": {
+    "description": "Auto imported from components/home/Speakers.vue"
+  },
+  "HomeTag": {
+    "description": "Auto imported from components/home/Tag.vue"
+  },
+  "ComiteProfile": {
+    "description": "Auto imported from components/comite/Profile.vue"
+  }
+}
