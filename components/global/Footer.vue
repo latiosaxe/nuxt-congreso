@@ -14,9 +14,9 @@
         <p class="text-sm mb-2" v-text="company.label"></p>
         <ul class="flex">
           <li v-for="(el, index2) in company.links" :key="index2" class="mr-2">
-            <nuxt-link :to="el.link" no-prefetch>
+            <a :href="el.link" _target="blank">
               <span class="icons" :class="`icon-${el.icon}`"></span>
-            </nuxt-link>    
+            </a>    
           </li>
         </ul>
       </div>
