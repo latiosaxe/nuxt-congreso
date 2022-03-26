@@ -1,0 +1,26 @@
+/* ------------------------------------------------------------ *\
+  When adding new color variables, you can add them in the
+  list below to automatically generate classes for `color` and
+  `background-color`!
+\* ------------------------------------------------------------ */
+
+$color-list: (
+  emerald: $c-emerald,
+  light-blue: $c-light-blue,
+  dark-grey: $c-dark-grey,
+);
+
+/* ------------------------------------------------------------ *\
+  The function below generates two classes for each color in
+  the color list above.
+\* ------------------------------------------------------------ */
+
+@each $name, $value in $color-list {
+  .bg-#{$name} {
+    background-color: $value !important;
+  }
+
+  .text-#{$name} {
+    color: $value !important;
+  }
+}

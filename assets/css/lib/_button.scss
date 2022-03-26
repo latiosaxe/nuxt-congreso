@@ -1,0 +1,49 @@
+.button {
+  color: $c-font;
+  font-size: 20px;
+  padding: 12px 30px;
+  background: $c-white;
+
+  &.--primary {
+    color: $c-white;
+    background: $c-primary;
+  }
+
+  &.--white {
+    border: 1px solid $c-primary;
+  }
+
+  &.--is-rounded {
+    border-radius: 32px;
+  }
+
+  &.--compact {
+    width: 190px;
+    font-size: 14px;
+    padding: 8px 4px;
+    font-weight: bold;
+    text-align: center;
+
+    img {
+      width: 30px;
+    }
+
+    &.--flex {
+      width: auto;
+      padding: 8px 14px;
+
+      img {
+        margin-right: 6px;
+      }
+    }
+  }
+
+  &.--nano {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
