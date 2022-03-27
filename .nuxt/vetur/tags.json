@@ -5,6 +5,12 @@
   "Header": {
     "description": "Auto imported from components/global/Header.vue"
   },
+  "Modal": {
+    "description": "Auto imported from components/global/Modal.vue"
+  },
+  "ComiteProfile": {
+    "description": "Auto imported from components/comite/Profile.vue"
+  },
   "HomeBenefits": {
     "description": "Auto imported from components/home/Benefits.vue"
   },
@@ -25,8 +31,5 @@
   },
   "HomeTag": {
     "description": "Auto imported from components/home/Tag.vue"
-  },
-  "ComiteProfile": {
-    "description": "Auto imported from components/comite/Profile.vue"
   }
 }

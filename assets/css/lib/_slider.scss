@@ -1,20 +1,11 @@
 .carousel-wrapper {
-  position: relative;
-  display: flex;
-  overflow-x: scroll;
-  counter-reset: item;
-  scroll-behavior: smooth;
-  height: auto;
   padding: 0;
-  scroll-snap-type: x mandatory;
+  height: auto;
+  position: relative;
 
   &__relative {
     width: 240px;
     height: 295px;
-    flex: 0 0 240px;
-    position: relative;
-    margin-right: 10px;
-    counter-increment: item;
 
     &:last-of-type {
       margin-right: 0;
@@ -26,5 +17,75 @@
     width: 100%;
     height: 100%;
     position: relative;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0 !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transition: transform 300ms ease-in-out;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide-active {
+  transform: scale(1.1);
+
+  .profile__label p {
+    text-align: center;
+  }
+
+  .profile__label__info {
+    display: block;
+  }
+
+  .profile__label.--with-info {
+    height: 80px;
+  }
+}
+
+.swiper-pagination-bullet {
+  margin: 0 6px;
+  position: relative;
+  background: #4bcfbb !important;
+}
+
+.swiper-pagination-bullet-active {
+  box-shadow: 0 0 0 4px #ffffff,
+              0 0 0 5px #4bcfbb;
+
+  &:before {
+    contain: '';
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #4bcfbb;
   }
 }

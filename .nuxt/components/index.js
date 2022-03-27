@@ -1,13 +1,14 @@
-export const Footer = () => import('../../components/global/Footer.vue' /* webpackChunkName: "components/footer" */).then(c => wrapFunctional(c.default || c))
-export const Header = () => import('../../components/global/Header.vue' /* webpackChunkName: "components/header" */).then(c => wrapFunctional(c.default || c))
-export const HomeBenefits = () => import('../../components/home/Benefits.vue' /* webpackChunkName: "components/home-benefits" */).then(c => wrapFunctional(c.default || c))
-export const HomeConvene = () => import('../../components/home/Convene.vue' /* webpackChunkName: "components/home-convene" */).then(c => wrapFunctional(c.default || c))
-export const HomeGoals = () => import('../../components/home/Goals.vue' /* webpackChunkName: "components/home-goals" */).then(c => wrapFunctional(c.default || c))
-export const HomeHero = () => import('../../components/home/Hero.vue' /* webpackChunkName: "components/home-hero" */).then(c => wrapFunctional(c.default || c))
-export const HomeInterest = () => import('../../components/home/Interest.vue' /* webpackChunkName: "components/home-interest" */).then(c => wrapFunctional(c.default || c))
-export const HomeSpeakers = () => import('../../components/home/Speakers.vue' /* webpackChunkName: "components/home-speakers" */).then(c => wrapFunctional(c.default || c))
-export const HomeTag = () => import('../../components/home/Tag.vue' /* webpackChunkName: "components/home-tag" */).then(c => wrapFunctional(c.default || c))
-export const ComiteProfile = () => import('../../components/comite/Profile.vue' /* webpackChunkName: "components/comite-profile" */).then(c => wrapFunctional(c.default || c))
+export { default as Footer } from '../../components/global/Footer.vue'
+export { default as Header } from '../../components/global/Header.vue'
+export { default as Modal } from '../../components/global/Modal.vue'
+export { default as ComiteProfile } from '../../components/comite/Profile.vue'
+export { default as HomeBenefits } from '../../components/home/Benefits.vue'
+export { default as HomeConvene } from '../../components/home/Convene.vue'
+export { default as HomeGoals } from '../../components/home/Goals.vue'
+export { default as HomeHero } from '../../components/home/Hero.vue'
+export { default as HomeInterest } from '../../components/home/Interest.vue'
+export { default as HomeSpeakers } from '../../components/home/Speakers.vue'
+export { default as HomeTag } from '../../components/home/Tag.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

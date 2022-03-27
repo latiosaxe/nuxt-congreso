@@ -9,8 +9,8 @@
         v-for="(el, index) in nav" :key="index"
         class="ml-5 text-white"
       >
-        <a v-if="el.pdf" :href="`/files/${el.link}`" v-text="el.label" target="_blank"></a>
-        <nuxt-link v-else :to="el.link" no-prefetch v-text="el.label"></nuxt-link>
+        <a v-if="el.pdf" :href="`/files/${el.link}`" v-text="el.label" target="_blank" class="hover:underline underline-offset-1"></a>
+        <nuxt-link v-else :to="el.link" no-prefetch v-text="el.label" class="hover:underline underline-offset-1" exact></nuxt-link>
       </li>
     </ul>
   </div>
@@ -81,5 +81,9 @@ export default {
   left: 0;
   right: 0;
   padding: 50px 0 40px;
+}
+
+.nuxt-link-active {
+  color: #4bcfbb;
 }
 </style>
