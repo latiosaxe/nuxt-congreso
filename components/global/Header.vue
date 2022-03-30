@@ -85,7 +85,8 @@ export default {
   right: 0;
   padding: 50px 0 40px;
 
-  a:hover {
+  a:hover,
+  nuxt-link:hover {
     color: #4bcfbb;
   }
 }
