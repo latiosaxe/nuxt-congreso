@@ -5,7 +5,7 @@
     <div class="footer__institutes flex items-center justify-between w-full mb-10">
       <img src="@/static/footer/tecnologico-toluca.png" alt="tecnologico-toluca">
       <img src="@/static/footer/fgdp.png" alt="fgdp">
-      <img src="@/static/footer/feglinin.png" alt="feglinin">
+      <img src="@/static/footer/feglinin.png" alt="FEGLININ">
       <img src="@/static/footer/miidt.png" alt="miidt">
     </div>
     <p class="font-bold mb-2">Síguenos</p>
@@ -25,7 +25,7 @@
           <a href="/">Revista</a>
         </p>
         <p class="text-sm">
-          <a href="/">Aviso de privacidad</a>
+          <nuxt-link to="/aviso-de-privacidad">Aviso de privacidad</nuxt-link>
         </p>
       </div>
     </div>
@@ -53,7 +53,7 @@ export default {
             }
           ]
         }, {
-          label: 'FEGLING',
+          label: 'FEGLININ',
           links: [
             {
               icon: 'fb',
@@ -81,11 +81,15 @@ export default {
           links: [
             {
               icon: 'fb',
-              link: 'https://www.facebook.com/'
+              link: 'https://www.facebook.com/FedeGlobal'
             },
             {
               icon: 'in',
-              link: 'https://www.linkedin.com/'
+              link: 'https://www.linkedin.com/in/-fgdp-'
+            },
+            {
+              icon: 'tw',
+              link: 'https://twitter.com/Federacion_Glob'
             }
           ]
         }
@@ -135,6 +139,10 @@ export default {
 
     &.icon-in {
       background-image: url("~static/icons/in.png");
+    }
+
+    &.icon-tw {
+      background-image: url("~static/icons/tw.png");
     }
   }
 }

@@ -52,6 +52,7 @@ export default {
   mounted() {
     var swiper = new Swiper(".mySwiper", {
       loop: true,
+      autoplay: true,
       centeredSlides: true,
       slidesPerView: 5,
       spaceBetween: 20,
@@ -112,17 +113,17 @@ export default {
         },
         {
           name: 'Izhar Oswaldo Escudero Ornelas',
-          image: 'sandra.png',
+          image: 'izhar.png',
           info: false
         },
         {
-          name: 'Yanet Romero Arriaga ',
-          image: 'juan.png',
+          name: 'Yanet Romero Arriaga',
+          image: 'yanet.png',
           info: false
         },
         {
           name: 'César Humberto Anchante Saravia',
-          image: 'sandra.png',
+          image: 'cesar.png',
           info: false
         }
       ],

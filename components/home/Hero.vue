@@ -14,7 +14,7 @@
 
         <div class="flex">
           <a class="button --is-rounded --primary mr-4" href="https://docs.google.com/forms/d/e/1FAIpQLScbcVZHyXKvnOM-abhxt5cK0PoV3zGEWcuXdyLWODTsxg_trQ/viewform" target="_blank">Inscribirme</a>
-          <a class="button --is-rounded" href="https://docs.google.com/spreadsheets/d/1v4RVGRL9aF68jhW1gUIeufLzr7M-WhXMRNEcgPMrJ8Y/edit#gid=0" target="_blank">Ver Agenda</a>
+          <nuxt-link class="button --is-rounded" to="/agenda">Ver Agenda</nuxt-link>
         </div>
       </div>
     </div>

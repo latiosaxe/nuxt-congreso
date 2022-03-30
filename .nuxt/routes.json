@@ -7,6 +7,13 @@
     "_name": "_7e0fe078"
   },
   {
+    "name": "Aviso-De-Privacidad",
+    "path": "/Aviso-De-Privacidad",
+    "component": "/Users/latiosaxe/code/me/nuxt-congreso/pages/Aviso-De-Privacidad.vue",
+    "chunkName": "pages/Aviso-De-Privacidad",
+    "_name": "_01e18114"
+  },
+  {
     "name": "Comite-Arbitral",
     "path": "/Comite-Arbitral",
     "component": "/Users/latiosaxe/code/me/nuxt-congreso/pages/Comite-Arbitral.vue",

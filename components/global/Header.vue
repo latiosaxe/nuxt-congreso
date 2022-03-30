@@ -70,7 +70,10 @@ export default {
   },
   mounted() {
     window.addEventListener('scroll', this.updateScroll);
-    this.pivot = document.querySelector('.hero.relative').clientHeight
+    const pivotEl = document.querySelector('.hero.relative')
+    if(pivotEl) {
+      this.pivot = pivotEl.clientHeight
+    }
   }
 }
 </script>

@@ -5,6 +5,7 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _7e0fe078 = () => interopDefault(import('../pages/Agenda.vue' /* webpackChunkName: "pages/Agenda" */))
+const _01e18114 = () => interopDefault(import('../pages/Aviso-De-Privacidad.vue' /* webpackChunkName: "pages/Aviso-De-Privacidad" */))
 const _28c4e84d = () => interopDefault(import('../pages/Comite-Arbitral.vue' /* webpackChunkName: "pages/Comite-Arbitral" */))
 const _88769ae8 = () => interopDefault(import('../pages/Comite-Organizador.vue' /* webpackChunkName: "pages/Comite-Organizador" */))
 const _59f59af2 = () => interopDefault(import('../pages/Contacto.vue' /* webpackChunkName: "pages/Contacto" */))
@@ -26,6 +27,10 @@ export const routerOptions = {
     path: "/Agenda",
     component: _7e0fe078,
     name: "Agenda"
+  }, {
+    path: "/Aviso-De-Privacidad",
+    component: _01e18114,
+    name: "Aviso-De-Privacidad"
   }, {
     path: "/Comite-Arbitral",
     component: _28c4e84d,
