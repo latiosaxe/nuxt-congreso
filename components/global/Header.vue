@@ -4,7 +4,7 @@
   :class="{ 'bg-black': $route.name != 'index' || ($route.name == 'index' && scrollPosition > pivot)}"
 >
   <div class="container mx-auto flex justify-end overflow-hidden">
-    <ul class="flex w-full overflow-auto">
+    <ul class="flex justify-end w-full overflow-auto">
       <li
         v-for="(el, index) in nav" :key="index"
         class="ml-5 text-white"
