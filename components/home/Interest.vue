@@ -1,7 +1,7 @@
 <template>
   <div class="home-interest relative overflow-hidden bg-light-blue">
     <div class="container">
-      <div class="home-interest__content grid grid-cols-2 relative">
+      <div class="home-interest__content md:grid grid-cols-2 relative">
         <div class="bg-dark-grey home-interest__image">
           <img src="@/static/hero-interest.png" alt="Convocan" data-aos="fade-left" data-aos-delay="300" data-aos-duration="900"/>
         </div>
@@ -50,13 +50,15 @@
 
   &:before {
     content: '';
-    top: 0;
-    left: -50%;
-    bottom: 0;
-    z-index: 1;
-    right: 50%;
-    position: absolute;
-    background: #2b2b2b;
+    @media (min-width: 768px) {
+      top: 0;
+      left: -50%;
+      bottom: 0;
+      z-index: 1;
+      right: 50%;
+      position: absolute;
+      background: #2b2b2b;
+    }
   }
 }
 </style>

@@ -2,7 +2,7 @@
   <div class="hero relative">
     <div class="container text-white flex">
       <div class="hero__content relative" data-aos="fade-up" data-aos-duration="900">
-        <h2 class="text-8xl">Bienvenido</h2>
+        <h2 class="text-4xl md:text-8xl">Bienvenido</h2>
         <p class="text-xl font-thin mb-10">
           al 1er. Congreso Internacional sobre
           Tecnología, Innovación, Calidad y Productividad

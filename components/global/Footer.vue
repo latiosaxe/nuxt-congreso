@@ -2,14 +2,14 @@
 <template>
 <div class="footer bg-dark-grey text-white">
   <div class="container">
-    <div class="footer__institutes flex items-center justify-between w-full mb-10">
+    <div class="footer__institutes md:flex items-center justify-between w-full mb-10">
       <img src="@/static/footer/tecnologico-toluca.png" alt="tecnologico-toluca">
       <img src="@/static/footer/fgdp.png" alt="fgdp">
       <img src="@/static/footer/feglinin.png" alt="FEGLININ">
       <img src="@/static/footer/miidt.png" alt="miidt">
     </div>
     <p class="font-bold mb-2">Síguenos</p>
-    <div class="flex flex-start">
+    <div class="flex flex-start flex-wrap">
       <div v-for="(company, index) in social" :key="index" class="mr-20">
         <p class="text-sm mb-2" v-text="company.label"></p>
         <ul class="flex">
@@ -22,7 +22,7 @@
       </div>
       <div class="fake-pipe">
         <p class="text-sm mb-2">
-          <a href="/">Revista</a>
+          <a href="https://www.latindex.org/latindex/inicio" target="_blank">Revista FEGLININ</a>
         </p>
         <p class="text-sm">
           <nuxt-link to="/aviso-de-privacidad">Aviso de privacidad</nuxt-link>
@@ -35,6 +35,19 @@
 
 
 <script>
+//  {
+//           label: 'FEGLININ',
+//           links: [
+//             {
+//               icon: 'fb',
+//               link: 'https://www.facebook.com/fedeglobal.deingenierosindustriales'
+//             },
+//             {
+//               icon: 'in',
+//               link: 'https://www.linkedin.com/in/-fgdp-/'
+//             }
+//           ]
+//         }, 
 export default {
   name: 'Header',
   data () {
@@ -50,18 +63,6 @@ export default {
             {
               icon: 'in',
               link: 'https://www.linkedin.com/company/tecnologico-universitario-toluca/'
-            }
-          ]
-        }, {
-          label: 'FEGLININ',
-          links: [
-            {
-              icon: 'fb',
-              link: 'https://www.facebook.com/fedeglobal.deingenierosindustriales'
-            },
-            {
-              icon: 'in',
-              link: 'https://www.linkedin.com/in/-fgdp-/'
             }
           ]
         }, {
@@ -123,6 +124,7 @@ export default {
     img {
       // width: 150px;
       height: 60px;
+      margin-bottom: 20px;
     }
   }
 

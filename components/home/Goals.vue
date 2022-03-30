@@ -2,8 +2,8 @@
 <template>
   <div class="relative overflow-hidden bg-light-blue py-20">
     <div class="container">
-      <div class="grid grid-cols-2 gap-20 relative">
-        <div class="self-center">
+      <div class="md:grid grid-cols-2 gap-20 relative">
+        <div class="self-start">
           <h3 class="text-emerald text-5xl font-bold mb-4">Objetivo<br/>General</h3>
           <ol>
             <li>
@@ -14,7 +14,7 @@
             </li>
           </ol>
         </div>
-        <div class="self-center">
+        <div class="self-start">
           <h3 class="text-emerald text-5xl font-bold mb-4">Objetivos<br/>Específicos</h3>
           <ol>
             <li>

@@ -1,7 +1,7 @@
 <template>
   <div class="home-convene relative overflow-hidden bg-light-blue">
     <div class="container">
-      <div class="home-convene__content grid grid-cols-2 relative">
+      <div class="home-convene__content md:grid grid-cols-2 relative">
         <div class="self-center home-convene__text">
           <h3 class="text-emerald text-4xl font-bold mb-2">Convocan</h3>
           <p>
@@ -29,7 +29,9 @@
   }
 
   &__text {
-    padding-right: 80px;
+    @media (min-width: 768px) {
+      padding-right: 80px;
+    }
   }
 
   &__image {
@@ -40,13 +42,15 @@
 
   &:before {
     content: '';
-    top: 0;
-    left: 50%;
-    bottom: 0;
-    z-index: 1;
-    right: -50%;
-    position: absolute;
-    background: #2b2b2b;
+    @media (min-width: 768px) {
+      top: 0;
+      left: 50%;
+      bottom: 0;
+      z-index: 1;
+      right: -50%;
+      position: absolute;
+      background: #2b2b2b;
+    }
   }
 }
 </style>

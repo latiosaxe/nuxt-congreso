@@ -3,14 +3,14 @@
   class="header fixed z-50 transition-all bg-transparent duration-500"
   :class="{ 'bg-black': $route.name != 'index' || ($route.name == 'index' && scrollPosition > pivot)}"
 >
-  <div class="container mx-auto flex justify-end">
-    <ul class="flex">
+  <div class="container mx-auto flex justify-end overflow-hidden">
+    <ul class="flex w-full overflow-auto">
       <li
         v-for="(el, index) in nav" :key="index"
         class="ml-5 text-white"
       >
-        <a v-if="el.pdf" :href="`/files/${el.link}`" v-text="el.label" target="_blank" class="hover:underline underline-offset-1"></a>
-        <nuxt-link v-else :to="el.link" no-prefetch v-text="el.label" class="hover:underline underline-offset-1" exact></nuxt-link>
+        <a v-if="el.pdf" :href="`/files/${el.link}`" v-text="el.label" target="_blank" class="hover:underline underline-offset-1 cursor-pointer"></a>
+        <nuxt-link v-else :to="el.link" no-prefetch v-text="el.label" class="hover:underline underline-offset-1 cursor-pointer" exact></nuxt-link>
       </li>
     </ul>
   </div>
@@ -78,12 +78,16 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .header {
   top: 0;
   left: 0;
   right: 0;
   padding: 50px 0 40px;
+
+  a:hover {
+    color: #4bcfbb;
+  }
 }
 
 .nuxt-link-active {

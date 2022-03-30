@@ -1,7 +1,7 @@
 <template>
   <div class="no-home-section bg-light-blue agenda">
     <div class="container">
-      <div class="grid grid-cols-10 gap-20 relative">
+      <div class="md:grid grid-cols-10 gap-20 relative">
         <div class="agenda__image relative col-span-4">
           <img src="@/static/agenda.png" alt="Agenda">
         </div>
@@ -23,18 +23,6 @@
                 width="500" height="500" frameborder="0" scrolling="no"
                 src="https://docs.google.com/spreadsheets/d/1v4RVGRL9aF68jhW1gUIeufLzr7M-WhXMRNEcgPMrJ8Y/edit?usp=sharing&rm=minimal"
               />
-              <!-- <div class="agenda__grid__row">
-                <p class="text-emerald text-lg mb-2">05/06/2022</p>
-                <p><span class="agenda__grid__row__hour">09:00 - 10:00</span><span class="font-bold">Conferencia 01</span></p>
-                <p><span class="agenda__grid__row__hour">10:00 - 11:00</span><span class="font-bold">Conferencia 02</span></p>
-                <p><span class="agenda__grid__row__hour">11:00 - 12:00</span><span class="font-bold">Conferencia 03</span></p>
-              </div>
-              <div class="agenda__grid__row">
-                <p class="text-emerald text-lg mb-2">05/06/2022</p>
-                <p><span class="agenda__grid__row__hour">09:00 - 10:00</span><span class="font-bold">Conferencia 01</span></p>
-                <p><span class="agenda__grid__row__hour">10:00 - 11:00</span><span class="font-bold">Conferencia 02</span></p>
-                <p><span class="agenda__grid__row__hour">11:00 - 12:00</span><span class="font-bold">Conferencia 03</span></p>
-              </div> -->
             </template>
             <template v-if="currentTab == 1">
               <iframe
@@ -50,7 +38,7 @@
             </template>
           </div>
           <div>
-            <nuxt-link class="button --is-rounded mr-2 --primary" to="/" no-prefetch>Inscribirme</nuxt-link>
+            <a class="button --is-rounded mr-2 --primary" href="https://docs.google.com/forms/d/e/1FAIpQLScbcVZHyXKvnOM-abhxt5cK0PoV3zGEWcuXdyLWODTsxg_trQ/viewform" target="_blank">Inscribirme</a>
           </div>
         </div>
       </div>
@@ -86,7 +74,11 @@ export default {
     img {
       width: 100%;
       display: block;
-      transform: translateX(90px);
+      transform: translateX(0px);
+
+      @media (min-width: 768px) {
+        transform: translateX(90px);
+      }
     }
 
     &:before {

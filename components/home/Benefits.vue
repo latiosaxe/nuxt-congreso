@@ -1,10 +1,10 @@
 <template>
   <div class="home-benefits container">
-    <p class="text-xl text-center font-bold text-emerald mb-16">
+    <p class="text-3xl text-center font-bold text-emerald mb-16">
       Al participar en este evento serás parte de:
     </p>
 
-    <div class="grid grid-cols-3 gap-20 relative">
+    <div class="md:grid grid-cols-3 gap-20 relative">
       <div class="home-benefits__element flex justify-center items-center flex-col" data-aos="fade-up" data-aos-duration="900">
         <img class="mb-6" src="@/static/icons/icon-1.png" alt="Icon 1">
         <div class="mb-3 flex text-emerald font-bold items-center">

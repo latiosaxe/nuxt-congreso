@@ -5,8 +5,8 @@
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
     <div class="home-speakers__head text-center mb-4">
-      <p class="text-emerald text-5xl font-bold">Conoce más</p>
-      <p class="font-bold text-lg">acerca del asombroso grupo de oradores que compartirán sus ideas y conocimientos.</p>
+      <p class="text-emerald text-5xl font-bold mb-4">Conoce más</p>
+      <p class="font-bold text-3xl">acerca del asombroso grupo de oradores que compartirán sus ideas y conocimientos.</p>
     </div>
 
     <div class="home-speakers__title relative">
@@ -17,13 +17,15 @@
     </div>
 
     <div class="home-speakers__slider relative">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide carousel-wrapper__relative" v-for="(ppl, index) in speakers" :key="index" >
-            <ComiteProfile :name="ppl.name" :image="ppl.image"  :info="ppl.info" :data="ppl.data" />
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide carousel-wrapper__relative" v-for="(ppl, index) in speakers" :key="index" >
+              <ComiteProfile :name="ppl.name" :image="ppl.image"  :info="ppl.info" :data="ppl.data" />
+            </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
     </div>
 
@@ -35,7 +37,7 @@
     </div>
 
     <div class="container">
-      <div class="grid grid-cols-4 gap-5">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
         <ComiteProfile v-for="(ppl, index) in workshop" :key="index" :name="ppl.name" :image="ppl.image"/>
       </div>
     </div>
@@ -52,21 +54,32 @@ export default {
   mounted() {
     var swiper = new Swiper(".mySwiper", {
       loop: true,
+      arrows: true,
       autoplay: true,
       centeredSlides: true,
-      slidesPerView: 5,
+      slidesPerView: 2,
       spaceBetween: 20,
       pagination: {
         el: ".swiper-pagination",
           clickable: true,
-      }
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+        }
+      },
     })
   },
   data () {
     return {
       speakers: [
         {
-          name: 'Gaby Carolina Muñoz Chará',
+          name: 'Ing. Gaby Carolina Muñoz Chará',
           image: 'gaby.png',
           info: true,
           data: {
@@ -75,8 +88,8 @@ export default {
           }
         },
         {
-          name: 'Víctor Pagaza Melero',
-          image: 'rene.png',
+          name: 'Mtro. Víctor Pagaza Melero',
+          image: 'victor.png',
           info: true,
           data: {
             job: 'Fundador y CEO de la empresa A3P IMPERLLANTA',
@@ -84,7 +97,7 @@ export default {
           }
         },
         {
-          name: 'Antonio Alarcón Paredes',
+          name: 'Dr. Antonio Alarcón Paredes',
           image: 'antonio.png',
           info: true,
           data: {
@@ -93,7 +106,12 @@ export default {
           }
         },
         {
-          name: 'José Ricardo Guadarrama Jiménez',
+          name: 'Dr. Edgardo Solís Carmona ',
+          image: 'edgardo.png',
+          info: false
+        },
+        {
+          name: 'Ing. José Ricardo Guadarrama Jiménez',
           image: 'jose.png',
           info: true,
           data: {
@@ -102,27 +120,22 @@ export default {
           }
         },
         {
-          name: 'Edgardo Solís Carmona ',
-          image: 'edgardo.png',
-          info: false
-        },
-        {
-          name: 'Cristina García',
+          name: 'Mtra. Cristina García',
           image: 'cristina.png',
           info: false
         },
         {
-          name: 'Izhar Oswaldo Escudero Ornelas',
+          name: 'Mtro. Izhar Oswaldo Escudero Ornelas',
           image: 'izhar.png',
           info: false
         },
         {
-          name: 'Yanet Romero Arriaga',
+          name: 'Dra. Yanet Romero Arriaga',
           image: 'yanet.png',
           info: false
         },
         {
-          name: 'César Humberto Anchante Saravia',
+          name: 'Dr. César Humberto Anchante Saravia',
           image: 'cesar.png',
           info: false
         }
@@ -133,31 +146,31 @@ export default {
           image: 'tayde.png'
         },
         {
-          name: 'Manuel Tovilla Espadas ',
+          name: 'Mtro. Manuel Tovilla Espadas',
           image: 'manuel.png'
         },
         {
-          name: 'Carlos Abraham Carballo Monsivais',
+          name: 'Mtro. Carlos Abraham Carballo Monsivais',
           image: 'carlos.png'
         },
         {
-          name: 'Liliana Álvarez Arreola',
+          name: 'Mtra. Liliana Álvarez Arreola',
           image: 'liliana.png'
         },
         {
-          name: 'Jesús Eduardo Lara Miranda',
+          name: 'Mtro. Jesús Eduardo Lara Miranda',
           image: 'jesus.png'
         },
         {
-          name: 'Aland Yarden Escudero Ornelas',
+          name: 'Mtro. Aland Yarden Escudero Ornelas',
           image: 'aland.png'
         },
         {
-          name: 'Sylvia Garcés Soria',
+          name: 'Ing. Sylvia Garcés Soria',
           image: 'sylvia.png'
         },
         {
-          name: 'Héctor Bourget Ontiveros',
+          name: 'Dr. Héctor Bourget Ontiveros',
           image: 'hector.png'
         }
       ]
@@ -173,7 +186,7 @@ export default {
   &__head {
     margin-left: auto;
     margin-right: auto;
-    max-width: 420px;
+    max-width: 470px;
   }
 
   &__title {
