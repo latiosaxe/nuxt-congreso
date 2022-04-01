@@ -26,16 +26,16 @@
           </div>
         </div>
         <p class="text-center">
-          con profesionales de la más alta especialidad de distintas industrias y países.
+          expertas en su campo; que abarcarán  desde temas de Tecnología, Finanzas, Machine Learning, Administración del Tiempo y mucho más
         </p>
       </div>
       <div class="home-benefits__element flex justify-center items-center flex-col" data-aos="fade-up" data-aos-delay="600" data-aos-duration="900">
         <img class="mb-6" src="@/static/icons/icon-3.png" alt="Icon 3">
         <div class="mb-3 flex text-emerald font-bold items-center leading-6 text-xl text-center">
-          <p>Presentación de trabajos de investigación científica </p>
+          <p>Presentación de trabajos de investigación científica</p>
         </div>
         <p class="text-center">
-          con profesionales de la más alta especialidad de distintas industrias y países.
+          En ponencia directa de 10min y en la revista FEGLININ (ISSN 2594-2298 e indexada Latindex).
         </p>
       </div>
     </div>

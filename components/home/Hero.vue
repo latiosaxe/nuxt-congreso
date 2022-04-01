@@ -4,9 +4,7 @@
       <div class="hero__content relative" data-aos="fade-up" data-aos-duration="900">
         <h2 class="text-4xl md:text-8xl">Bienvenido</h2>
         <p class="text-xl font-thin mb-10">
-          al 1er. Congreso Internacional sobre
-          Tecnología, Innovación, Calidad y Productividad
-          .para el Desarrollo Económico de las Naciones.
+          al 1er. Congreso Internacional sobre Tecnología, Innovación, Calidad y Productividad para el Desarrollo Económico de las Naciones.
         </p>
         <p class="hero__content__small text-xl font-thin mb-8">
           <span class="font-bold">16, 17 y 18</span> de Mayo de 2022, en modalidad virtual.

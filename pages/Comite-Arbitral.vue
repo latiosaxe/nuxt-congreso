@@ -65,7 +65,7 @@ export default {
           email: 'jazmin.lo@pachuca.tecnm.mx '
         },{
           name: 'Juan Pablo Díaz Moreno - Maestro',
-          place: 'Instituto Tecnológico de Acapulco',
+          place: 'Federación Global de Profesiones',
           email: 'mxdiazjuan@gmail.com'
         },{
           name: 'Juan José Bedolla Solano - Doctor',

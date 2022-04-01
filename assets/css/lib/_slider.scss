@@ -65,8 +65,16 @@
     display: block;
   }
 
+  .profile-name {
+    color: #4bcfbb;
+  }
+
   .profile__label.--with-info {
-    height: 80px;
+    min-height: 80px;
+  }
+
+  .speak-name { 
+    display: block;
   }
 }
 
