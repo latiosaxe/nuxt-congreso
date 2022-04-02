@@ -43,7 +43,7 @@
     </div>
 
     <div class="home-speakers__cta text-center">
-      <a href="https://docs.google.com/spreadsheets/d/1v4RVGRL9aF68jhW1gUIeufLzr7M-WhXMRNEcgPMrJ8Y/edit#gid=0" class="button --is-rounded --primary mr-4" _target="blank">Ver Agenda Virtual</a>
+      <nuxt-link to="/agenda" class="button --is-rounded --primary mr-4">Ver Agenda Virtual</nuxt-link>
     </div>
   </div>
 </template>
