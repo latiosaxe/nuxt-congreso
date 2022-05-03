@@ -9,6 +9,7 @@ You can directly use them in pages and other components without the need to impo
 - `<Footer>` | `<footer>` (components/global/Footer.vue)
 - `<Header>` | `<header>` (components/global/Header.vue)
 - `<Modal>` | `<modal>` (components/global/Modal.vue)
+- `<ComiteProfile>` | `<comite-profile>` (components/comite/Profile.vue)
 - `<HomeBenefits>` | `<home-benefits>` (components/home/Benefits.vue)
 - `<HomeConvene>` | `<home-convene>` (components/home/Convene.vue)
 - `<HomeGoals>` | `<home-goals>` (components/home/Goals.vue)
@@ -16,4 +17,3 @@ You can directly use them in pages and other components without the need to impo
 - `<HomeInterest>` | `<home-interest>` (components/home/Interest.vue)
 - `<HomeSpeakers>` | `<home-speakers>` (components/home/Speakers.vue)
 - `<HomeTag>` | `<home-tag>` (components/home/Tag.vue)
-- `<ComiteProfile>` | `<comite-profile>` (components/comite/Profile.vue)

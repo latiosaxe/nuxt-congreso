@@ -1,0 +1,39 @@
+{
+  "entry": "server.js",
+  "files": {
+    "components/comite-profile.js": "components/comite-profile.js",
+    "components/home-benefits.js": "components/home-benefits.js",
+    "components/home-convene.js": "components/home-convene.js",
+    "components/home-goals.js": "components/home-goals.js",
+    "components/home-hero.js": "components/home-hero.js",
+    "components/home-interest.js": "components/home-interest.js",
+    "components/home-speakers.js": "components/home-speakers.js",
+    "components/home-tag.js": "components/home-tag.js",
+    "pages/Agenda.js": "pages/Agenda.js",
+    "pages/Aviso-De-Privacidad.js": "pages/Aviso-De-Privacidad.js",
+    "pages/Comite-Arbitral.js": "pages/Comite-Arbitral.js",
+    "pages/Comite-Organizador.js": "pages/Comite-Organizador.js",
+    "pages/Contacto.js": "pages/Contacto.js",
+    "pages/Para-El-Autor.js": "pages/Para-El-Autor.js",
+    "pages/index.js": "pages/index.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "components/comite-profile.js": "components/comite-profile.js.map",
+    "components/home-benefits.js": "components/home-benefits.js.map",
+    "components/home-convene.js": "components/home-convene.js.map",
+    "components/home-goals.js": "components/home-goals.js.map",
+    "components/home-hero.js": "components/home-hero.js.map",
+    "components/home-interest.js": "components/home-interest.js.map",
+    "components/home-speakers.js": "components/home-speakers.js.map",
+    "components/home-tag.js": "components/home-tag.js.map",
+    "pages/Agenda.js": "pages/Agenda.js.map",
+    "pages/Aviso-De-Privacidad.js": "pages/Aviso-De-Privacidad.js.map",
+    "pages/Comite-Arbitral.js": "pages/Comite-Arbitral.js.map",
+    "pages/Comite-Organizador.js": "pages/Comite-Organizador.js.map",
+    "pages/Contacto.js": "pages/Contacto.js.map",
+    "pages/Para-El-Autor.js": "pages/Para-El-Autor.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "server.js": "server.js.map"
+  }
+}

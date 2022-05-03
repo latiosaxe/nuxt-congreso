@@ -12,7 +12,7 @@
 
         <div class="flex">
           <a class="button --is-rounded --primary mr-4" href="https://docs.google.com/forms/d/e/1FAIpQLScbcVZHyXKvnOM-abhxt5cK0PoV3zGEWcuXdyLWODTsxg_trQ/viewform" target="_blank">Inscribirme</a>
-          <nuxt-link class="button --is-rounded" to="/agenda">Ver Agenda</nuxt-link>
+          <a href="/files/agenda.pdf" target="_blank" class="button --is-rounded">Ver Agenda</a>
         </div>
       </div>
     </div>

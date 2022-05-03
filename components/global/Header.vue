@@ -30,8 +30,8 @@ export default {
         },
         {
           label: 'Agenda',
-          link: '/agenda',
-          pdf: false
+          link: 'agenda.pdf',
+          pdf: true
         },
         {
           label: 'Comité Organizador',
